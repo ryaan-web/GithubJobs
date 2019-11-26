@@ -15,7 +15,7 @@
     "scripts": {
         "start:app": "cd client && yarn start",
         "start:server": "netlify-lambda serve functions",
-        "build:app": "yarn cache clean && yarn autoclean --force && cd client  && yarn cache clean && yarn autoclean --force && yarn install && yarn build",
+        "build:app": "yarn cache clean && yarn autoclean --force && rm -rf  ./node_modules && rm -rf  ./yarn.lock && cd client  && yarn cache clean && yarn autoclean --force && rm -rf  ./node_modules && rm -rf  ./yarn.lock && yarn install && yarn build",
         "build:functions": "netlify-lambda build functions"
     },
     "devDependencies": {
