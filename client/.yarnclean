@@ -1,0 +1,12 @@
+# test directories
+__tests__
+test
+tests
+powered-test
+
+# code coverage directories
+coverage
+.nyc_output
+
+
+node_modules
